@@ -1,13 +1,129 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: small;
+  background-color: rgb(255, 230, 230);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+div.main-wrapper {
+  max-height: 90vh;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+}
+
+section.discussion--wrapper {
+  overflow: auto;
+  padding: 4rem;
+}
+
+.discussion--container {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discussion--li {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.discussion--li:hover {
+  background-color: rgb(255, 192, 192);
+  transition: 1s ease;
+  color: #fff;
+}
+
+.discussion--li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.discussion--li a:hover {
+  color: violet;
+  transition: 1s ease;
+}
+
+.avatar--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.avatar--wrapper>img {
+  width: 50px;
+  border-radius: 100%;
+}
+
+.avatar--wrapper>span {
+  margin-left: 1rem;
+}
+
+.discussion--content--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 0 0;
+  padding: 0.5rem;
+}
+
+.discussion--content--category {
+  padding: 1rem 0 0 0;
+}
+
+.discussion--content--information {
+  text-align: right;
+}
+
+.discussion--answered {
+  display: flex;
+  flex: 0 0 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.discussion--answered:hover {
+  color: blueviolet;
+  transition: 1s ease;
+}
+
+footer {
+  display: flex;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  background-color: #fff;
 }
